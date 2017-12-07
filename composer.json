@@ -2,13 +2,15 @@
   "require": {
     "codeception/codeception": "*",
     "browserstack/browserstack-local": "dev-master",
-    "codegyre/robo": "*",
-    "codeception/robo-paracept": "@dev"
+    "consolidation/robo": "*",
+    "codeception/robo-paracept": "@dev",
+    "codeception/specify": "^1.0",
+    "codeception/verify": "^1.0"
   },
   "scripts": {
     "test": "composer single && composer local && composer parallel",
-    "single": "vendor/bin/codecept run --env single -g single",
-    "local": "vendor/bin/codecept run --env local -g local",
+    "single": "vendor/bin/codecept run --env single -g single --steps",
+    "local": "vendor/bin/codecept run --env local -g local --steps",
     "parallel": "vendor/bin/robo parallel:all"
   },
   "autoload": {

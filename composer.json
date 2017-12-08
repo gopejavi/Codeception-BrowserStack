@@ -1,6 +1,7 @@
 {
   "require": {
     "codeception/codeception": "*",
+    "facebook/webdriver": "^1.4",
     "browserstack/browserstack-local": "dev-master",
     "consolidation/robo": "*",
     "codeception/robo-paracept": "@dev",

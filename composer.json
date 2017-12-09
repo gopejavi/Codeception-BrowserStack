@@ -10,9 +10,9 @@
   },
   "scripts": {
     "test": "composer single && composer local && composer parallel",
-    "single": "vendor/bin/codecept run --env single -g single --steps",
-    "local": "vendor/bin/codecept run --env local -g local --steps",
-    "parallel": "vendor/bin/robo parallel:all"
+    "single": "codecept run --env single -g single --steps",
+    "local": "codecept run --env local -g local --steps",
+    "parallel": "robo parallel:all"
   },
   "autoload": {
     "classmap": ["lib/"]

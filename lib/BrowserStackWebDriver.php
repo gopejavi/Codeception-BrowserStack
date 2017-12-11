@@ -26,6 +26,6 @@ class BrowserStackWebDriver extends \Codeception\Module\WebDriver
     // HOOK: after suite
     public function _afterSuite() {
         parent::_afterSuite();
-        if($this->bs_local) $this->bs_local->stop();
+        shell_exec("kill " . $this->bs_local->pid);
     }
 }

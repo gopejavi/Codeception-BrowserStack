@@ -33,7 +33,7 @@ env:
     modules:
       config:
         \BrowserStackWebDriver:
-          url: 'http://bs-local.com:45691'
+          url: 'http://192.168.99.100'
           capabilities:
             'browserstack.local': true
             'name': 'local_test'

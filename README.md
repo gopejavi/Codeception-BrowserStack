@@ -12,6 +12,7 @@
 * Update `tests/acceptance.suite.yml` file with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
 
 ## Running your tests
+* To run a BDD local test, run `./vendor/bin/codecept run --env local acceptance HomePageWorks.feature --steps`
 * To run a single test, run `composer single`
 * To run local tests, run `composer local`
 * To run parallel tests, run `composer parallel`

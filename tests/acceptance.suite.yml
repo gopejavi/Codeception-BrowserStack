@@ -9,6 +9,7 @@ class_name: AcceptanceTester
 modules:
   enabled:
     - \BrowserStackWebDriver
+    - Db
   config:
     \BrowserStackWebDriver:
       host: 'hub-cloud.browserstack.com'
@@ -20,7 +21,7 @@ modules:
         'browserstack.key' : 'BROWSERSTACK_ACCESS_KEY'
         'browserstack.debug': true
         'build': 'codeception-browserstack'
-
+    
 env:
   single:
     modules:
